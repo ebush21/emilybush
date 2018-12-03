@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Emily Bush</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+
+<div class="topnav" id="myTopnav">
+	<h1 id="nav_header"> Emily Bush </h1>
+	<a href="about_me.html">About Me</a>
+	<a href="work_samples.html">Work Samples</a>
+	<a href="resume.html" id="active">Resume</a>
+	<a href="index.html" >Home Page</a>
+	
+</div>
+
+<br/>
+
+<div id="accordian_res">
+<button class="accordion">Education</button>
+<div class="panel">
+  <img src="images/mga_logo.jpg" id="mga_logo" alt="MGA Logo">
+  <h3>Middle Georgia State University</h3>                                                              
+English B.A. / JULY 2018<br/>
+<p>Minor: Web Development and Instructional Technology</p>
+
+</div>
+
+<button class="accordion">Work History</button>
+<div class="panel">
+  <h3>KROGER | CUSTOMER SERVICE | FLOOR SUPERVISOR | ACCOUNTING</h3>
+		January 28, 2015 – Present Day
+	<ul>
+		<li>Confer with customers by telephone or in person to provide information about products or services or obtain details of complaints.</li>
+		<li>Resolve customer’s service or billing complaint by performing activities such as exchanging merchandise, refunding money, or adjusting bills.</li>
+		<li>Direct and supervise employees engaged in sales and in preforming services for customers, while providing on-the-job training to resolve issues.</li>
+		<li>Helping Customers Navigate and Use the Kroger App.</li>
+		<li>Motivating, developing, and directing people as they work.</li>
+		<li>Identifying the best people for the job and assigning people to specific duties.</li>
+		<li>Maintain financial and accounting records.</li>
+	</ul>
+</div>
+
+<button class="accordion">Skills & Achievements</button>
+<div class="panel">
+  
+	<ul>
+		<li>Presidential Scholarship Recipient</li>	
+		<li>Financial accounting</li>
+		<li>Active Listening</li>				
+		<li>Professional Communication and Correspondence</li>			
+		<li>Creative Writing</li>			
+		<li>Reading Comprehension</li>
+		<li>Editing</li>	
+		<li>Articulation</li>	
+		<li>Team building</li> 	
+		<li>Microsoft Office Suite</li>		 	
+		<li>Adobe Creative Cloud</li>
+		<li class="sublevel">Premiere Pro, Photoshop, InDesign, Illustrator, Dreamweaver</li>	
+		<li>Web Design</li>	
+		<li class="sublevel">HTML and CSS</li>	
+	</ul>		
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}</script>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Emily Bush</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"
+>
+</head>
+
+<body>
+
+
+<div class="topnav" id="myTopnav">
+	<h1 id="nav_header"> Emily Bush </h1>
+	<a href="about_me.html">About Me</a>
+	<a href="work_samples.html">Work Samples</a>
+	<a href="resume.html">Resume</a>
+	<a href="index.html" id="active">Home Page</a>
+</div>
+
+<br/>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides" class="fade">
+    <img src="images/san_fran.jpg" style="width:100%" class="responsive" alt="San Francisco">
+  </div>
+
+  <div class="mySlides" class="fade">
+    <img src="images/fountain.jpg" style="width:100%" class="responsive" alt="Fountain">
+  </div>
+
+  <div class="mySlides" class="fade">
+    <img src="images/Water_spout.jpg" style="width:100%" class="responsive" alt="Waterfall">
+  </div>
+  
+  <div class="mySlides" class="fade">
+    <img src="images/flower_2.jpg" style="width:100%" class="responsive" alt="Flower(Orchid)">
+  </div>
+  
+  <div class="mySlides" class="fade">
+    <img src="images/boats.jpg" style="width:100%" class="responsive" alt="Sail Boats">
+  </div>
+  
+  <div class="mySlides" class="fade">
+    <img src="images/flower_path.jpg" style="width:100%" class="responsive" alt="Flower Path">
+  </div>
+  
+  <div class="mySlides" class="fade">
+    <img src="images/golden_gate.jpg" style="width:100%" class="responsive" alt="Golden Gate Bridge">
+  </div>
+  
+  <div class="mySlides" class="fade">
+    <img src="images/river.jpg" style="width:100%" class="responsive" alt="River">
+  </div>
+
+  
+
+<script>
+ var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 3000);
+}
+</script>
+
+<div class="quote">
+<p>“You are a wonderful creation. You know more than you think you know, just as you know less than you want to know.” 
+― Oscar Wilde, The Picture of Dorian Gray</p>
+</div>
+</body>
+
+<footer>
+
+</footer>
+
+</html>

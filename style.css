@@ -1,0 +1,167 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+/*Colors
+teal: #4bbbcc
+blue: #4b90cc
+pink: #cc4b7b
+yellow: #cc9d4b
+gray: #8c8c8c
+white: #ffffff
+*/
+
+body {
+	background-color: #4bbbcc;
+}	
+
+/*Header in Nav*/
+
+#nav_header{
+	color: #1c5962;
+	padding-left: 5%;
+	display: inline;
+	text-align: center; 
+	font-family: 'Dancing Script', cursive;
+	letter-spacing: 2.5px;
+	text-shadow: 1px 1.5px #4bbbcc;
+}
+
+
+/*Navigation*/
+
+.topnav {
+	background-color: #cc4b7b;
+	overflow: hidden;
+}
+
+.topnav a {
+	float: right;
+	display: inline;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	padding-bottom: 14px;
+	padding-top: 11px;	
+	text-decoration: none;
+	font-size: 20px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.topnav a:hover {
+	background-color: #fff;
+	color:  #4bbbcc;
+}
+
+#active {
+	color: #F3EB30;
+	background-color: #8c8c8c;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+
+
+/*image slideshow*/
+	
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+	max-height: 450px;
+	
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.quote {
+	text-align: center;
+	padding: 15px;
+	color: #cc4b7b;
+	font-size: 17px;
+	font-family: Dancing Script;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+
+
+
+
+/*resume*/
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+	display: none;
+    overflow: hidden;
+}
+
+#accordian_res .accordion:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+#accordian_res .active:after {
+    content: "\2796"; 
+}
+
+#mga_logo {
+	float: right;
+	display: inline;
+	padding: 25px;
+	padding-right: 200px;
+}
+
